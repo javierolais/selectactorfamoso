@@ -1,0 +1,79 @@
+body {
+    background-color: whitesmoke;   
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    outline: 1px solid #000;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item{
+    width: 20%;
+    background: white ;
+}
+
+.item2{
+    flex: 1;
+    padding: 7px;
+}
+
+.average {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+::-webkit-scrollbar-track {
+    -webkit-box: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px !important;
+    background-color: #F5F5F5 !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: #F5F5F5 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    -webkit-box: inset 0 0 6px rgba(0, 0, 0, .3) !important;
+    background-color: rgb(226, 233, 239) !important;
+}
+
+@media screen and (max-width: 1366px) {
+    .container {
+        height: 600px;
+        overflow: auto;
+        top: 44%;
+    }
+
+    .item {
+        height: 137%;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    /* RESPONSIVO PARA TABLETS */
+    .container {
+        height: 550px;
+        overflow: auto;
+        top: 47%;
+    }
+
+    .item {
+        height: 156%;
+    }
+
+    .item2 {
+        height: 156%;
+    }
+}
